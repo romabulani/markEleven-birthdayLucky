@@ -19,7 +19,7 @@ function validate(){
     var number = numberInput.value;
     if(dob && number)
         if(number<0)
-            paragraph.innerHTML= "Lucky number should be greater than orequal to 0";
+            paragraph.innerHTML= "Lucky number should be greater than or equal to 0";
         else
             birthdayLucky(dob,number);
     else
