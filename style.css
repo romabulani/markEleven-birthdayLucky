@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Marmelad&display=swap');
+
+:root{
+    --primary-color:#90EE90;
+    --secondary-color: #006400;
+}
+body{
+    text-align: center;
+    font-family: 'Marmelad', sans-serif;
+    display: block;
+    margin: auto;
+    background-color: var(--primary-color);
+}
+
+button{
+    font-family: 'Marmelad', sans-serif;
+    background-color: var(--secondary-color);
+    color: white;
+    height: 2rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    width: 5rem;
+    font-weight: bold;
+}
+
+#input-dob, #input-number{
+    background-color: transparent;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    border: 1px var(--secondary-color) solid;
+    height: 2rem;
+}
