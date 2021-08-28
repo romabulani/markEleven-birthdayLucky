@@ -17,11 +17,14 @@ function birthdayLucky(dob,number){
 function validate(){
     var dob = dobInput.value;
     var number = numberInput.value;
-    if(dob && number)
+    if (dob === '')
+        paragraph.innerHTML = 'Please enter valid DOB';
+    else if(dob && number){
         if(number<0)
             paragraph.innerHTML= "Lucky number should be greater than or equal to 0";
         else
             birthdayLucky(dob,number);
+    }
     else
         paragraph.innerHTML = "Enter both the fields";
 }
